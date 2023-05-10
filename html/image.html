@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Slider</title>
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 90vh;
+            background-color: #557571;
+        }
+
+        .image img {
+            height: 100%;
+            width: 100%;
+            text-align: center;
+        }
+
+        .slide {
+            height: 400px;
+            width: 600px;
+            overflow: hidden;
+            box-shadow: 1px 1px 15px black;
+        }
+
+        .slide .image {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide">
+        <div class="image">
+            <img src="../images/download (1).jpg">
+            <img src="../images/download (2).jpg">
+            <img src="../images/download(4).png">
+            <img src="../images/download(5).png">
+            <img src="../images/download.jpg">
+        </div>
+    </div>
+    <script>
+        var indexValue = 0;
+        function slideShow() {
+            setTimeout(slideShow, 2500);
+            const img = document.querySelectorAll("img");
+            // for (var i = 0; i < img.length; i++) {
+            //     img[i].style.display = "block";
+            // }
+            indexValue++;
+            if (indexValue > img.length) { indexValue = 1 }
+            img[indexValue - 1].style.display = "block";
+        }
+        slideShow();
+    </script>
+</body>
+
+</html>

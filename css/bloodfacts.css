@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #e8f1f5;
+  
+  }
+  
+  #header {
+    text-align: center;
+    padding: 20px;
+    color: #E11B22;
+    background-color: #E8E8E8;
+  }
+  
+  .navbar {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    background-color: #ff6464;
+  }
+  
+  .navbar img {
+    margin-left: 50px;
+    height: 60px;
+    width: 70px;
+  }
+  
+  .navbar .nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .navbar .nav a {
+    margin-right: 40px;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(248, 244, 244);
+    font-size: large;
+    font-weight: 600;
+  }
+  
+  .navbar .nav a i {
+    transform: translateY(3px);
+    padding-left: 5px;
+  }
+  
+  .navbar .active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(208, 17, 17);
+    border-radius: 6px;
+  }
+  .navbar .nav a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(208, 17, 17);
+    border-radius: 6px;
+    transition: all 0.4s ease-in-out;
+  }
+  
+
+.chart{
+    text-align: center;
+    padding: 20px;
+    color: #E11B22;
+    background-color: #E8E8E8;
+}
+
+.container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding: 2% 5%;
+    margin: 2%;
+    border: 2px solid rgba(255, 0, 0, 0.5);
+    border-radius: 10px;
+    color: black;
+    font-weight: 500;
+  }
+  
+  .container .title {
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 30px 0;
+    color: red;
+  }
+  
+  .container hr {
+    margin-bottom: 25px;
+  }
+  
+  .container p {
+    font-size: 1.3rem;
+  }
+  .container ul,
+  .container ol {
+    font-size: 1.2rem;
+    padding: 40px;
+  }
+  
+  .container ul li,
+  .container ol li {
+
+    padding: 5px 0px;
+  }
+table,th, tr, td {
+    color:black;
+    background-color: rgba(229, 172, 172, 0.933);
+    border: 3px solid #6A1208;
+    border-collapse: collapse;
+    padding:10px 20px;
+    text-align: center;
+    font-weight: 700; 
+}
+
+video{
+    margin: auto;
+    padding: 40px;
+    box-shadow: #6A1208;
+}
+table{
+    margin: auto;
+}
+
+.donated-blood h2{
+    margin: 30px 0;
+    text-align: center;
+}
+  
+.donated-blood span {
+    color: red;
+}
+
+
+.donated-blood img {
+    width: 80%;
+   margin: 30px 0 0 100px;
+    cursor: pointer;
+}
+ul, ol{
+    list-style-image: square inside url(../images/Blood_drop.png);
+}
+.copyright{
+    height: 50px;
+    padding-top: 40px;
+    text-align: center;
+    color: grey;
+    cursor: pointer;
+}
+
+.copyright span{
+    color: #E11B22;
+}

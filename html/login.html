@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+
+</head>
+
+<body>
+
+    <header id="header">
+        <h1>BLOOD DONATION MANAGEMENT SYSTEM</h1>
+    </header>
+    <!-- <nav class="navbar">
+        <img src="../images/logo.png">
+        <div class="nav">
+            <a href="../index.html">Home</a>
+            <a href="#">Blood Facts</a>
+            <a href="../html/contact.html">Contact</a>
+            <a href="./registration.html">Donate blood</a>
+            <a href="./request.html">Request blood</a>
+            <a class="active" href="#">Login </a>
+        </div>
+    </nav> -->
+
+    <div class="request-container">
+        <div class="left-image">
+            <img src="./../images/login.png" alt="" srcset="">
+        </div>
+        <div class="request-form">
+            <form action="" id="request-details" method="post" onsubmit="return check()">
+                <h2>Login</h2><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" onkeyup="emailverify()" name="email" autocomplete="email" required placeholder="Email">
+                <p id="email_error"></p>
+
+                <label for="password">Password:</label>
+                <input type="password" id="pass" onkeyup="passverify()" name="password" autocomplete="password" required
+                    placeholder="Password">
+                <p id="password_error"></p>
+                <br>
+
+                <a href="./forgetpassword.html">Forgot Password?</a>
+                <h6 id="register">Do not have an account? <a href="../html/registration.html">Register</a></h6>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+    <!-- <footer>
+        <div class="copyright">
+            <p>Copyright &copy; 2022 | All rights reserved | Developed by <span>Sedhuragavan L</span></p>
+        </div>
+    </footer> -->
+
+    <script src="../javascript/login.js"></script>
+</body>
+
+</html>

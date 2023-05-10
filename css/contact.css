@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#header {
+    text-align: center;
+    padding: 20px;
+    color: #E11B22;
+    background-color: #E8E8E8;
+}
+
+.navbar {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    background-color: #ff6464;
+}
+
+.navbar img {
+    margin-left: 50px;
+    height: 70px;
+    width: 70px;
+}
+
+.navbar .nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar .nav a {
+    margin-right: 40px;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(248, 244, 244);
+    font-size: large;
+    font-weight: 600;
+}
+
+.navbar .nav a i {
+    transform: translateY(3px);
+    padding-left: 5px;
+}
+
+.navbar .active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(208, 17, 17);
+    border-radius: 6px;
+}
+
+.navbar .nav a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(208, 17, 17);
+    border-radius: 6px;
+    transition: all 0.4s ease-in-out;
+}
+
+.request-container {
+    display: flex;
+}
+
+.request-container .left-image,
+.request-container .request-form {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.request-container .left-image {
+    width: 50%;
+}
+
+.request-container .left-image img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.request-container .request-form {
+    width: 30%;
+    margin: 5%;
+    box-sizing: border-box;
+    border: 2px solid rgba(255, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.request-container .request-form form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.request-container .request-form form h2 {
+    color: red;
+}
+
+.request-container .request-form form label {
+    opacity: .75;
+}
+
+.request-container .request-form form input {
+
+    height: 30px;
+    border: 1.5px solid rgba(32, 33, 37, 0.3);
+    padding: 5px;
+    width: 90%;
+    border-radius: 6px;
+}
+
+.request-container .request-form form textarea{
+    border-radius: 6px;
+    width: 90%;
+    border: 1.5px solid rgba(32, 33, 37, 0.3);
+
+}
+
+.request-container .request-form form button {
+    margin: 30px 0 0 0;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    width: max-content;
+    border-radius: 20px;
+}
+
+p {
+    font-size: 15px;
+    margin-top: 5px;
+    color: red;
+}
+
+.copyright p {
+    height: 50px;
+    padding-top: 40px;
+    text-align: center;
+    color: #222730;
+    cursor: pointer;
+}
+
+.copyright span {
+    color: #E11B22;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Donor Registration</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./../css/registration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<body>
+    <header id="header">
+        <h1>BLOOD DONATION MANAGEMENT SYSTEM</h1>
+    </header>
+    <!-- <nav class="navbar">
+        <img src="../images/logo.png">
+        <div class="nav">
+            <a href="../index.html">Home</a>
+            <a href="./bloodfacts.html">Blood Facts</a>
+            <a href="./contact.html">Contact</a>
+            <a class="active" href="#">Donate blood</a>
+            <a href="./request.html">Request blood</a>
+            <a href="./login.html">Login </a>
+        </div>
+    </nav> -->
+
+    <div class="peronsal-info">
+        <h2 class="title">Donor Registration</h2>
+        <form action="../index.html" method="post" id="personal-info" onsubmit="return validated()">
+            <div class="form-items">
+                <div class="left">
+                    <label for="name">Name</label>
+                    <input type="text" onkeyup="username()" id="name" name="name" required
+                        placeholder="Enter your Name">
+                    <p id="name_error"></p>
+
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" onclick="dateofbirth()" name="dob" required id="dob">
+                    <input type="text" class="disableFuturedate">
+                    <p id="dob_error"></p>
+
+
+                    <script>
+                        $(document).ready(function () {
+                            var currentDate = new Date();
+                            $('.disableFuturedate').datepicker({
+                                format: 'dd/mm/yyyy',
+                                autoclose: true,
+                                endDate: "currentDate",
+                                maxDate: currentDate
+                            }).on('changeDate', function (ev) {
+                                $(this).datepicker('hide');
+                            });
+                            $('.disableFuturedate').keyup(function () {
+                                if (this.value.match(/[^0-9]/g)) {
+                                    this.value = this.value.replace(/[^0-9^-]/g, '');
+                                }
+                            });
+                        });
+                    </script>
+
+
+
+
+                    <label for="gender">Gender</label>
+                    <select name="gender" required id="gender">
+                        <option value="" disabled selected> Select your Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <p id="gender_error"></p>
+
+                    <label for="bgroup">BloodGroup</label>
+                    <select name="bgroup" required id="bgroup">
+                        <option value="" disabled selected> Select your BloodGroup</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                    </select>
+                    <p id="gender_error"></p>
+
+
+                    <label for="weight">Weight</label>
+                    <input type="number" id="weight" onkeyup="minweight()" name="weight" required
+                        placeholder="Enter your Weight">
+                    <p id="weight_error"></p>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="number" id="phone" onkeyup="phoneverify()" name="phone" required
+                        placeholder="Phone Number">
+                    <p id="phone_error"></p>
+
+                </div>
+
+                <div class="right">
+
+                    <label for="street">Street</label>
+                    <input type="text" id="street" name="street" required placeholder="Enter your Street">
+                    <p id="street_error"></p>
+
+                    <label for="area">Area</label>
+                    <input type="text" id="area" name="area" required placeholder="Enter your Area">
+                    <p id="area_error"></p>
+
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" required placeholder="Enter your City">
+                    <p id="city_error"></p>
+
+                    <label for="pincode">Pincode</label>
+                    <input type="number" id="pin" name="pin" required placeholder="Pincode">
+                    <p id="name_error"></p>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" onkeyup="emailverify()" name="email" required
+                        placeholder="E -Mail ID">
+                    <p id="email_error"></p>
+
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" onkeyup="passverify()" name="pass" required
+                        placeholder="Enter password">
+                    <p id="password_error"></p>
+
+                    <label for="name">Confirm Password</label>
+                    <input type="password" id="pass1" onkeyup="confirmpassverify()" name="pass1"
+                        placeholder="Confirm password">
+                    <p id="pass1_error"></p>
+                </div>
+            </div>
+            <button type="submit" id="submit">Register</button>
+            <p> Already you are a Donor? <a href="../html/login.html">Please Login</a> </p>
+        </form>
+    </div>
+
+    </div>
+    <!-- <footer>
+        <div class="copyright">
+            <p>Copyright &copy; 2022 | All rights reserved | Developed by <span>Sedhuragavan L</span></p>
+        </div>
+    </footer> -->
+
+    <script src="../javascript/registration.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #e8f1f5;
+
+}
+
+#header {
+  text-align: center;
+  padding: 20px;
+  color: #E11B22;
+  background-color: #E8E8E8;
+}
+
+.navbar {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  background-color: #ff6464;
+}
+
+.navbar img {
+  margin-left: 50px;
+  height: 70px;
+  width: 70px;
+}
+
+.navbar .nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar .nav a {
+  margin-right: 40px;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(248, 244, 244);
+  font-size: large;
+  font-weight: 600;
+}
+
+.navbar .nav a i {
+  transform: translateY(3px);
+  padding-left: 5px;
+}
+
+.navbar .active {
+  color: rgb(255, 255, 255);
+  background-color: rgb(208, 17, 17);
+  border-radius: 6px;
+}
+
+.navbar .nav a:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(208, 17, 17);
+  border-radius: 6px;
+  transition: all 0.4s ease-in-out;
+}
+
+
+.reasons-to-donate {
+  background: url(../images/homeBanner.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  align-items: center;
+  padding: 2%;
+  color: #ffff;
+  font-size: 1.3rem;
+}
+
+.reasons-to-donate * {
+  margin: 10px;
+}
+
+.reasons-to-donate ol {
+  padding: 5%;
+}
+
+.images {
+  background-color: rgb(158, 88, 88);
+}
+
+.images p {
+  padding: 20px;
+  color: #ffff;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+}
+
+.images img {
+  margin: 0 auto;
+  width: 100%;
+  height: 70vh;
+}
+
+.donar_sec {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 100px;
+  width: 60%;
+  position: absolute;
+}
+
+.b_group {
+  float: left;
+  margin: 40px 100px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  row-gap: 40px;
+  transform: translateX(-30px);
+}
+
+.b_group .blood_list {
+  background-color: #E11B22;
+  color: #ffff;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0 50px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.b_group h2 {
+  grid-column-start: span 4;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 0 50px;
+  color: #872a66;
+  padding-bottom: 10px;
+  border-bottom: 2px solid gray;
+}
+
+.b_group .blood_list h3 {
+  padding: 20px;
+  text-align: center;
+}
+
+.b_group .blood_list p {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.d_data {
+  display: flex;
+  margin-top: 40px;
+  overflow: hidden;
+
+}
+
+.d_data img {
+  width: 350px;
+  height: 350px;
+}
+
+.d_data .cont p {
+  padding: 50px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.d_data .cont  a {
+  margin-top: 20px;
+  position: absolute;
+  background-color: #c66119;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 8px;
+  color: #ffff;
+  /* transform: translateX(100px); */
+}
+
+.donor_join {
+  float: right;
+  width: 300px;
+  transform: translatex(-120px);
+  margin-top: 40px;
+  background-color: rgb(242, 244, 241);
+  cursor: pointer;
+}
+
+.donor_join .dhead h3 {
+  background-color: rgb(247, 126, 5);
+  color: #ffff;
+  padding: 8px 40px 8px 8px;
+  margin-bottom: 8px;
+}
+
+
+.donor_join .total {
+  display: flex;
+  padding: 8px;
+  border-bottom: 1px solid gray;
+}
+
+.donor_join .total .blood_date {
+  text-align: center;
+  background-color: rgb(243, 42, 42);
+  color: white;
+  padding: 10px 8px;
+  border-radius: 8px;
+}
+
+.donor_join .total .blood_date h4 {
+  background-color: rgb(110, 71, 71);
+  padding: 5px;
+}
+
+.donor_join .total .blood_date p {
+  padding: 5px;
+}
+
+.donor_join .total .user {
+  padding: 1rem;
+  color: gray;
+}
+
+.donor_join .total .user .fa-solid {
+  margin-right: 30px;
+  line-height: 1.3;
+}
+
+.donor_join .total .user .fa-solid {
+  color: orangered;
+}
+
+.copyright {
+  clear: both;
+  height: 50px;
+  padding-top: 40px;
+  text-align: center;
+  color: #222730;
+  cursor: pointer;
+}
+
+.copyright span {
+  color: #E11B22;
+}
